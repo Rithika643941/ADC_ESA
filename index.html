@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Landing Page Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css"> 
+</head>
+<body>
+    <div id="home" class="header">
+        <nav>
+            <h2 class="logo"><a href="index.html">Portfo<span>lio</span></a></h2>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skill">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="b_text">
+                <h4><span>Hello</span>, my name is</h4>
+                <h1>D.Rithika Rani</h1>
+                <h3>I am an <span>Interaction Designer</span></h3>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about section-padding">
+        <div class="about-section">
+            <div class="about-img">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/2y43yQr/Screenshot-2024-10-16-104001.png" width="500" height="500" border="0"></a>
+            </div>
+            <div class="about-text">
+                <h2><span>ABOUT</span> ME</h2>
+                <p class="collapsed">
+                    I am a Student at PES University, studying interaction design
+                    <span id="dots">...</span>
+                    <span id="more-text">
+                        I can make websites more interactive with animations while keeping them clean and minimal.
+                        I look forward to working with my peers and I am easy to get along with. I like to learn new things and I work to get better at them as much as I can.
+                    </span>
+                </p>
+                <button id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skill" class="skill section-padding">
+        <div class="section-header">
+            <h2>My <span>Skills</span></h2>
+            <p>My strengths and weaknesses, what I know, and what I can do</p>
+        </div>
+        <div class="skill-content">
+            <div class="skill-1">
+                <h2>HTML</h2>
+                <div class="d-box">
+                    <div class="d" style="width: 70%;"></div> 
+                </div>
+                <h2>CSS</h2>
+                <div class="d-box">
+                    <div class="d" style="width: 60%;"></div> 
+                </div>
+                <h2>Web Design</h2>
+                <div class="d-box">
+                    <div class="d" style="width: 80%;"></div> 
+                </div>
+            </div>
+            <div class="skill-2">
+                <h2>Graphic Design</h2>
+                <div class="d-box">
+                    <div class="d" style="width: 70%;"></div> 
+                </div>
+                <h2>Product Design</h2>
+                <div class="d-box">
+                    <div class="d" style="width: 70%;"></div> 
+                </div>
+                <h2>User Interface</h2>
+                <div class="d-box">
+                    <div class="d" style="width: 80%;"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section>
+        <div id="projects" class="projects section-padding">
+            <div class="project-text">
+                <h2>MY <span>PROJECTS</span></h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>UI UX Design</h3>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1UDAHGR7edhzEhOSih94WidEpWvzJplr36emu32LFMXU/edit?usp=drive_link"target="blank">
+                        <img src="https://i.ibb.co/jRMRD2b/Screenshot-2024-10-17-171016.png">
+                    </a>
+                    <div class="card-hover-info">
+                        <p>Usability Testing - phase 1</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Graphic Design</h3>
+                    </div>
+                    <a href="https://drive.google.com/file/d/14x1VZaiXV30ETO7jpXGHJQuG2Ycbz_cF/view?usp=sharing"target="blank"><img src="https://i.ibb.co/S6NpQwB/Screenshot-2024-10-17-174347.png"></a>
+                    <div class="card-hover-info">
+                        <p>The seven deadly sins typography</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Game Design</h3>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1nCiWS87CNCCbar7ANfLgUN-0u5DTNvkj/view?usp=sharing"target="blank"><img src="https://i.ibb.co/TRMLYJV/Screenshot-2024-10-17-174055.png"></a>
+                    <div class="card-hover-info">
+                        <p>Hyper casual game Recreation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <h2><span>Contact</span> Me</h2>
+        <p>For more info about my work, please click the link below</p>
+        <div class="social">
+            <a href="https://dribbble.com/Rithika_Rani" target=blank><i class="fa fa-dribbble"></i></a>
+            <a href="https://www.behance.net/rithikarani" target=blank><i class="fa fa-behance"></i></a>
+            <a href="https://www.instagram.com/mist_wave?igsh=NncwMDg5aHk3cDU5"target=blank><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>
